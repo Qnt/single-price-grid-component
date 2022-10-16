@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap');
+
+*{
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0px 0px 0px 0px;
+}
+
+body{
+  background-color: hsl(204, 43%, 93%);
+}
+
+h1{
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.price-component-container h1, h2, p, a, li{
+  color: white;
+}
+
+.price-component-container{  
+  width: 340px;
+  height: 800px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 6px hsl(218, 44%, 22%, 0.1);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);  
+  margin: 40px auto;
+}
+
+.price-component-info{
+  padding: 20px 20px;
+}
+
+.price-component-info h1{
+  color: hsl(179, 62%, 43%);
+}
+
+.price-component-info h2{
+  color: hsl(71, 73%, 54%);
+  margin-top: 24px;
+}
+
+.price-component-info p{
+  margin-top: 10px;
+  line-height: 28px;
+  color: hsl(218, 22%, 67%);
+}
+
+.price-component-price{
+  background-color: hsl(179, 62%, 43%);
+  padding: 30px 20px;
+}
+
+.price-component-price-container{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,90px);
+  align-items: center;
+}
+
+.price-component-price-container .price-component-price-value p{
+  font-size: 36px;
+}
+
+.price-component-price-container .price-component-price-period p{
+  color: hsl(204, 43%, 93%);
+}
+
+.price-component-price>p{
+  margin-top: 16px;
+}
+
+.sign-up-button{
+  margin-top: 40px;
+  width: 100%;
+  height: 50px;
+  background-color: hsl(71, 73%, 54%);
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 2px hsl(218, 44%, 22%, 0.1);
+}
+
+.price-component-advantages{
+  padding: 30px 20px;
+  background-color: hsl(179, 47%, 52%);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.price-component-advantages h1{
+  margin-bottom: 20px;
+}
+
+.price-component-advantages ul{
+  line-height: 24px;
+  padding: 0px;
+}
+
+.price-component-advantages li{
+  list-style-type: none;
+}
+
+@media screen and (min-width: 768px){
+  .price-component-container{
+    width: 660px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .price-component-info{
+    padding: 40px;
+    grid-column: span 2;
+  }
+
+  .price-component-price{
+    padding: 40px;
+    border-radius: 0px 0px 0px 5px;
+  }
+
+  .price-component-advantages{
+    padding: 40px;
+    border-radius: 0px 0px 5px 0px;
+  }
+}
